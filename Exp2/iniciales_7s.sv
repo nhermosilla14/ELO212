@@ -25,12 +25,13 @@ module iniciales_7s(
     output logic [7:0] AN, 
     output logic [6:0] D7S);
     
+    logic [3:0] in_hex;
     logic [3:0] n; //salida contador
     logic clk_out_mux;
     
      clk_divider clk_div(
        .reset(1'b0),
-       .COUNTER_MAX(32'd200000),
+       .COUNTER_MAX(32'd100000),
        .clk_in(CLK100MHZ),
        .clk_out(clk_out_mux));
        
@@ -89,8 +90,8 @@ module iniciales_7s(
                         D7S[2]=1'b0;
                         D7S[3]=1'b1;
                         D7S[4]=1'b0;
-                        D7S[5]=1'b1;
-                        D7S[6]=1'b0;
+                        D7S[5]=1'b0;
+                        D7S[6]=1'b1;
                   end
                   3'b101://vacio
                   begin
