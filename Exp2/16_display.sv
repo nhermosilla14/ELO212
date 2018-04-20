@@ -23,17 +23,17 @@
 module _16_display(
     input CLK100MHZ, 
     input logic [15:0] SW,
-    output logic [3:0] AN, 
-    output logic [6:0] DS7);
+    output logic [7:0] AN, 
+    output logic [6:0] D7S);
     
     logic [3:0] in_hex;
-    logic [6:0] output_7seg;
-    logic [1:0] n; //salida contador
+    logic [3:0] n; //salida contador
     logic clk_out;
     logic reset = 0;
     
     clk_divider clk_div(
-    .reset(reset),
+    .reset(1'b0),
+    .COUNTER_MAX(32'd208334),
     .clk_in(CLK100MHZ),
     .clk_out(clk_out));
     
@@ -44,39 +44,44 @@ module _16_display(
      
     bch_7seg SEG(
     .in_hex(in_hex),
-    .out_7seg(output_7seg));
-    
+    .out_7seg(D7S));
     
     always_comb
     begin
-        case (n)
-            4'b0000:
+       case (n[1:0])
+            2'b00:
             begin
-                reset = 0;
-                AN = 4'b0001;
+                //AN = 8'b11111110;
                 in_hex = SW[3:0]; 
-                DS7 = output_7seg;
             end
-            4'b0001:
+            2'b01:
             begin
-                AN = 4'b0010;
+                //AN = 8'b11111101;
                 in_hex = SW[7:4]; 
-                DS7 = output_7seg;
             end
-            4'b0010:
+            2'b10:
             begin
-                AN = 4'b0100;
+                //AN = 8'b11111011;
                 in_hex = SW[11:8]; 
-                DS7 = output_7seg;
             end
-            4'b0011:
+            2'b11:
             begin
-                AN = 4'b1000;
+                //AN = 8'b11110111;
                 in_hex = SW[15:12]; 
-                DS7 = output_7seg;
             end
             default:
-                reset = 1; 
+                in_hex= SW[3:0];
         endcase
+        case (n[1:0])
+            2'b00:
+                AN = 8'b11111110;
+            2'b01:
+                AN = 8'b11111101;
+            2'b10:
+                AN = 8'b11111011;
+            2'b11:
+                AN = 8'b11110111;
+        endcase            
+        
     end
 endmodule

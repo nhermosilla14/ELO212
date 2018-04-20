@@ -23,11 +23,11 @@
 module clk_divider(
     input logic clk_in,
     input logic reset,
+    input logic [31:0] COUNTER_MAX,
     output logic clk_out = 0
     );
-    localparam COUNTER_MAX = 'd833333;
     
-    logic [26:0] counter = 'd0;
+    logic [31:0] counter = 'd0;
         
     always @(posedge clk_in) begin
         if (reset == 1'b1) begin

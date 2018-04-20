@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 06.04.2018 16:37:12
+// Create Date: 20.04.2018 04:52:18
 // Design Name: 
-// Module Name: counter_4bit
+// Module Name: counter16_bit
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,16 +20,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module counter4_bit(
+module counter32_bit(
     input logic  clk,reset,
-    output logic [3:0] P
+    output logic [31:0] P
     );
-    logic [3:0] count = 0;
+    logic [31:0] count = 0;
     
     assign P = count;
     always_ff @(posedge clk) begin
         if (reset)
-            count <= 4'b0;
+            count <= 31'b0;
             
         else
             count <= count+1;
