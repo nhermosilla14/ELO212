@@ -31,9 +31,8 @@ module _16_display(
     logic clk_out;
     logic reset = 0;
     
-    clk_divider clk_div(
+    clk_divider #(32'd208334) clk_div(
     .reset(1'b0),
-    .COUNTER_MAX(32'd208334),
     .clk_in(CLK100MHZ),
     .clk_out(clk_out));
     

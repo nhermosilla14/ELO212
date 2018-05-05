@@ -20,13 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module clk_divider(
-    input logic clk_in,
+module clk_divider #(parameter COUNTER_MAX = 32'd100000) 
+    (input logic clk_in,
     input logic reset,
-    input logic [31:0] COUNTER_MAX,
     output logic clk_out = 0
     );
-    
+       
     logic [31:0] counter = 'd0;
         
     always @(posedge clk_in) begin
