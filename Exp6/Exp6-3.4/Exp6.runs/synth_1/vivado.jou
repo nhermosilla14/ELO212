@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Jul 15 04:39:15 2018
+# Process ID: 26667
+# Current directory: /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6-3.4/Exp6.runs/synth_1
+# Command line: vivado -log calculadora_retentor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source calculadora_retentor.tcl
+# Log file: /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6-3.4/Exp6.runs/synth_1/calculadora_retentor.vds
+# Journal file: /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6-3.4/Exp6.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source calculadora_retentor.tcl -notrace

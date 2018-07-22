@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "/hdd/nicolas/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../../Exp2/Exp2.srcs/sources_1/new/bch_7seg.sv" \
+"../../../../../Exp2/Exp2.srcs/sources_1/new/clk_divider.sv" \
+"../../../../Exp6_b.srcs/sources_1/new/contador_presiones.sv" \
+"../../../../../Exp4/Exp4.srcs/sources_1/new/counter_nbit.sv" \
+"../../../../Reusables/drv_7seg.sv" \
+"../../../../Exp6_b.srcs/sources_1/new/pb_debouncer.sv" \
+"../../../../Exp6_b.srcs/sources_1/new/calculadora_retentor.sv" \
+"../../../../Reusables/FDCE.sv" \
+"../../../../Reusables/alu4.sv" \
+"../../../../Exp6_b.srcs/sources_1/new/unsigned_to_bcd.sv" \
+"../../../../Reusables/driver_pwm.sv" \
+"../../../../Exp6_b.srcs/sim_1/new/alu4_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

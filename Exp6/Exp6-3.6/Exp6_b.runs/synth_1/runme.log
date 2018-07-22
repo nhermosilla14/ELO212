@@ -1,0 +1,518 @@
+
+*** Running vivado
+    with args -log calculadora_retentor.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source calculadora_retentor.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source calculadora_retentor.tcl -notrace
+Command: synth_design -top calculadora_retentor -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5598 
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDCE [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Reusables/FDCE.sv:23]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1261.941 ; gain = 94.273 ; free physical = 1048 ; free virtual = 11092
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'calculadora_retentor' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/calculadora_retentor.sv:23]
+INFO: [Synth 8-638] synthesizing module 'pb_debouncer' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/pb_debouncer.sv:23]
+	Parameter N bound to: 15 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/pb_debouncer.sv:65]
+INFO: [Synth 8-256] done synthesizing module 'pb_debouncer' (1#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/pb_debouncer.sv:23]
+INFO: [Synth 8-638] synthesizing module 'FDCE' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Reusables/FDCE.sv:23]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FDCE' (2#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Reusables/FDCE.sv:23]
+INFO: [Synth 8-638] synthesizing module 'alu6' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Reusables/alu6.sv:23]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'alu6' (3#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Reusables/alu6.sv:23]
+INFO: [Synth 8-638] synthesizing module 'driver_pwm' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Reusables/driver_pwm.sv:23]
+	Parameter bit_resolution bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp2/Exp2.srcs/sources_1/new/clk_divider.sv:23]
+	Parameter COUNTER_MAX bound to: 83333 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (4#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp2/Exp2.srcs/sources_1/new/clk_divider.sv:23]
+INFO: [Synth 8-638] synthesizing module 'counter_nbit' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp4/Exp4.srcs/sources_1/new/counter_nbit.sv:4]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_nbit' (5#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp4/Exp4.srcs/sources_1/new/counter_nbit.sv:4]
+INFO: [Synth 8-256] done synthesizing module 'driver_pwm' (6#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Reusables/driver_pwm.sv:23]
+INFO: [Synth 8-638] synthesizing module 'drv_7seg' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Reusables/drv_7seg.sv:23]
+INFO: [Synth 8-638] synthesizing module 'clk_divider__parameterized0' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp2/Exp2.srcs/sources_1/new/clk_divider.sv:23]
+	Parameter COUNTER_MAX bound to: 100000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider__parameterized0' (6#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp2/Exp2.srcs/sources_1/new/clk_divider.sv:23]
+INFO: [Synth 8-638] synthesizing module 'bch_7seg' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp2/Exp2.srcs/sources_1/new/bch_7seg.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'bch_7seg' (7#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp2/Exp2.srcs/sources_1/new/bch_7seg.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'drv_7seg' (8#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Reusables/drv_7seg.sv:23]
+INFO: [Synth 8-638] synthesizing module 'unsigned_to_bcd' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/unsigned_to_bcd.sv:22]
+	Parameter S_IDLE bound to: 1 - type: integer 
+	Parameter S_SHIFT bound to: 2 - type: integer 
+	Parameter S_ADD3 bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'unsigned_to_bcd' (9#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/unsigned_to_bcd.sv:22]
+INFO: [Synth 8-226] default block is never used [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/calculadora_retentor.sv:177]
+INFO: [Synth 8-226] default block is never used [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/calculadora_retentor.sv:224]
+WARNING: [Synth 8-87] always_comb on 'in_dec_reg' did not result in combinational logic [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/calculadora_retentor.sv:152]
+WARNING: [Synth 8-87] always_comb on 'alu_btn_reg' did not result in combinational logic [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/calculadora_retentor.sv:119]
+INFO: [Synth 8-256] done synthesizing module 'calculadora_retentor' (10#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/calculadora_retentor.sv:23]
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[15] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[14] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[13] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[10] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[9] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[8] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[7] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[6] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[5] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[4] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[2] driven by constant 0
+WARNING: [Synth 8-3331] design calculadora_retentor has unconnected port BTN[3]
+WARNING: [Synth 8-3331] design calculadora_retentor has unconnected port BTN[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1289.191 ; gain = 121.523 ; free physical = 1066 ; free virtual = 11111
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin FDCE_a:reset to constant 0 [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/calculadora_retentor.sv:90]
+WARNING: [Synth 8-3295] tying undriven pin FDCE_b:reset to constant 0 [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/calculadora_retentor.sv:98]
+WARNING: [Synth 8-3295] tying undriven pin FDCE_op:reset to constant 0 [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/calculadora_retentor.sv:106]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1289.191 ; gain = 121.523 ; free physical = 1066 ; free virtual = 11111
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Nexys4DDR.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED17[2]'. [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Nexys4DDR.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Nexys4DDR.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED17[1]'. [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Nexys4DDR.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Nexys4DDR.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED17[0]'. [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Nexys4DDR.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Nexys4DDR.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Nexys4DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Nexys4DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/calculadora_retentor_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/calculadora_retentor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1636.879 ; gain = 0.000 ; free physical = 772 ; free virtual = 10839
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:06 ; elapsed = 00:01:39 . Memory (MB): peak = 1636.879 ; gain = 469.211 ; free physical = 937 ; free virtual = 10984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:06 ; elapsed = 00:01:39 . Memory (MB): peak = 1636.879 ; gain = 469.211 ; free physical = 937 ; free virtual = 10984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:39 . Memory (MB): peak = 1636.879 ; gain = 469.211 ; free physical = 939 ; free virtual = 10986
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "PB_cnt0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element PB_cnt_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/pb_debouncer.sv:108]
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "idle" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bcd_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "counter_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'alu_btn_reg' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/calculadora_retentor.sv:119]
+WARNING: [Synth 8-327] inferring latch for variable 'in_dec_reg' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/calculadora_retentor.sv:152]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:41 . Memory (MB): peak = 1636.879 ; gain = 469.211 ; free physical = 913 ; free virtual = 10960
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 8     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 8     
+	   4 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 12    
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module calculadora_retentor 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+Module pb_debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module FDCE__mod 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module alu6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
++---Muxes : 
+	   5 Input      1 Bit        Muxes := 3     
+Module clk_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter_nbit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module driver_pwm 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+Module clk_divider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module drv_7seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module unsigned_to_bcd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 8     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element debouncer/PB_state_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/pb_debouncer.sv:105]
+WARNING: [Synth 8-6014] Unused sequential element debouncer/PB_negedge_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/pb_debouncer.sv:106]
+WARNING: [Synth 8-6014] Unused sequential element debouncer_reset/PB_negedge_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/pb_debouncer.sv:106]
+WARNING: [Synth 8-6014] Unused sequential element debouncer_reset/PB_posedge_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/pb_debouncer.sv:107]
+WARNING: [Synth 8-6014] Unused sequential element debouncer_down/PB_state_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/pb_debouncer.sv:105]
+WARNING: [Synth 8-6014] Unused sequential element debouncer_down/PB_negedge_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/pb_debouncer.sv:106]
+WARNING: [Synth 8-6014] Unused sequential element debouncer_up/PB_negedge_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/pb_debouncer.sv:106]
+INFO: [Synth 8-5545] ROM "pwm_3bit/slow_clock_/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm_3bit/slow_clock_/clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "driver/divider/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "driver/divider/clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element debouncer/PB_cnt_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/pb_debouncer.sv:108]
+WARNING: [Synth 8-6014] Unused sequential element debouncer_reset/PB_cnt_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/pb_debouncer.sv:108]
+WARNING: [Synth 8-6014] Unused sequential element debouncer_down/PB_cnt_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/pb_debouncer.sv:108]
+WARNING: [Synth 8-6014] Unused sequential element debouncer_up/PB_cnt_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.srcs/sources_1/new/pb_debouncer.sv:108]
+WARNING: [Synth 8-3917] design calculadora_retentor has port D7S[7] driven by constant 1
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[15] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[14] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[13] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[10] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[9] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[8] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[7] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[6] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[5] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[4] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculadora_retentor has port LED16[2] driven by constant 0
+WARNING: [Synth 8-3331] design calculadora_retentor has unconnected port BTN[3]
+WARNING: [Synth 8-3331] design calculadora_retentor has unconnected port BTN[2]
+INFO: [Synth 8-3886] merging instance 'in_dec_reg[31]' (LD) to 'in_dec_reg[30]'
+INFO: [Synth 8-3886] merging instance 'in_dec_reg[30]' (LD) to 'in_dec_reg[29]'
+INFO: [Synth 8-3886] merging instance 'in_dec_reg[29]' (LD) to 'in_dec_reg[28]'
+INFO: [Synth 8-3886] merging instance 'in_dec_reg[28]' (LD) to 'in_dec_reg[27]'
+INFO: [Synth 8-3886] merging instance 'in_dec_reg[27]' (LD) to 'in_dec_reg[26]'
+INFO: [Synth 8-3886] merging instance 'in_dec_reg[26]' (LD) to 'in_dec_reg[25]'
+INFO: [Synth 8-3886] merging instance 'in_dec_reg[25]' (LD) to 'in_dec_reg[24]'
+INFO: [Synth 8-3886] merging instance 'in_dec_reg[24]' (LD) to 'in_dec_reg[23]'
+INFO: [Synth 8-3886] merging instance 'in_dec_reg[23]' (LD) to 'in_dec_reg[22]'
+INFO: [Synth 8-3886] merging instance 'in_dec_reg[22]' (LD) to 'in_dec_reg[21]'
+INFO: [Synth 8-3886] merging instance 'in_dec_reg[21]' (LD) to 'in_dec_reg[20]'
+INFO: [Synth 8-3886] merging instance 'in_dec_reg[20]' (LD) to 'in_dec_reg[19]'
+INFO: [Synth 8-3886] merging instance 'in_dec_reg[19]' (LD) to 'in_dec_reg[18]'
+INFO: [Synth 8-3886] merging instance 'in_dec_reg[18]' (LD) to 'in_dec_reg[17]'
+INFO: [Synth 8-3886] merging instance 'in_dec_reg[17]' (LD) to 'in_dec_reg[16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\in_dec_reg[16] )
+WARNING: [Synth 8-3332] Sequential element (in_dec_reg[16]) is unused and will be removed from module calculadora_retentor.
+INFO: [Synth 8-3886] merging instance 'debouncer_reset/button_state_reg[1]' (FDR) to 'debouncer_reset/PB_state_reg'
+INFO: [Synth 8-3886] merging instance 'debouncer_up/button_state_reg[1]' (FDR) to 'debouncer_up/PB_state_reg'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:45 . Memory (MB): peak = 1636.879 ; gain = 469.211 ; free physical = 921 ; free virtual = 10969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:02:09 . Memory (MB): peak = 1636.879 ; gain = 469.211 ; free physical = 762 ; free virtual = 10819
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:02:10 . Memory (MB): peak = 1636.879 ; gain = 469.211 ; free physical = 761 ; free virtual = 10818
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:29 ; elapsed = 00:02:11 . Memory (MB): peak = 1636.879 ; gain = 469.211 ; free physical = 759 ; free virtual = 10816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:02:12 . Memory (MB): peak = 1636.879 ; gain = 469.211 ; free physical = 754 ; free virtual = 10814
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:02:12 . Memory (MB): peak = 1636.879 ; gain = 469.211 ; free physical = 750 ; free virtual = 10814
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:02:12 . Memory (MB): peak = 1636.879 ; gain = 469.211 ; free physical = 750 ; free virtual = 10814
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:02:12 . Memory (MB): peak = 1636.879 ; gain = 469.211 ; free physical = 750 ; free virtual = 10814
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:31 ; elapsed = 00:02:12 . Memory (MB): peak = 1636.879 ; gain = 469.211 ; free physical = 750 ; free virtual = 10814
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:31 ; elapsed = 00:02:12 . Memory (MB): peak = 1636.879 ; gain = 469.211 ; free physical = 750 ; free virtual = 10814
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    42|
+|3     |LUT1   |     8|
+|4     |LUT2   |    44|
+|5     |LUT3   |    29|
+|6     |LUT4   |    76|
+|7     |LUT5   |    36|
+|8     |LUT6   |    74|
+|9     |FDRE   |   274|
+|10    |LD     |    20|
+|11    |IBUF   |    21|
+|12    |OBUF   |    35|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+----------------------------+------+
+|      |Instance          |Module                      |Cells |
++------+------------------+----------------------------+------+
+|1     |top               |                            |   660|
+|2     |  FDCE_a          |FDCE__mod                   |    59|
+|3     |  FDCE_b          |FDCE__mod_0                 |    32|
+|4     |  FDCE_op         |FDCE__mod_1                 |    52|
+|5     |  calc            |alu6                        |    17|
+|6     |  debouncer       |pb_debouncer                |    38|
+|7     |  debouncer_down  |pb_debouncer_2              |    33|
+|8     |  debouncer_reset |pb_debouncer_3              |    32|
+|9     |  debouncer_up    |pb_debouncer_4              |    34|
+|10    |  driver          |drv_7seg                    |    66|
+|11    |    counter_an    |counter_nbit_5              |    14|
+|12    |    divider       |clk_divider__parameterized0 |    52|
+|13    |  pwm_3bit        |driver_pwm                  |    60|
+|14    |    cntr          |counter_nbit                |     8|
+|15    |    slow_clock_   |clk_divider                 |    52|
+|16    |  u32_to_bcd_inst |unsigned_to_bcd             |   154|
++------+------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:31 ; elapsed = 00:02:12 . Memory (MB): peak = 1636.879 ; gain = 469.211 ; free physical = 750 ; free virtual = 10814
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:21 . Memory (MB): peak = 1636.879 ; gain = 121.523 ; free physical = 814 ; free virtual = 10865
+Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:02:13 . Memory (MB): peak = 1636.887 ; gain = 469.211 ; free physical = 814 ; free virtual = 10865
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 83 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 20 instances were transformed.
+  LD => LDCE: 20 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 57 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:36 ; elapsed = 00:02:17 . Memory (MB): peak = 1636.887 ; gain = 482.598 ; free physical = 791 ; free virtual = 10854
+INFO: [Common 17-1381] The checkpoint '/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp6_b/Exp6_b.runs/synth_1/calculadora_retentor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file calculadora_retentor_utilization_synth.rpt -pb calculadora_retentor_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1660.891 ; gain = 0.000 ; free physical = 790 ; free virtual = 10844
+INFO: [Common 17-206] Exiting Vivado at Sat May 26 01:41:01 2018...
