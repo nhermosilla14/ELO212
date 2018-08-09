@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1533786455">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="SE_top.drc"/>
+  <File Type="BG-BGN" Name="SE_top.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="SE_top.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="SE_top.ltx"/>
+  <File Type="BITSTR-MMI" Name="SE_top.mmi"/>
+  <File Type="BITSTR-BMM" Name="SE_top_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="SE_top.nky"/>
+  <File Type="BITSTR-RBT" Name="SE_top.rbt"/>
+  <File Type="BITSTR-MSK" Name="SE_top.msk"/>
+  <File Type="BG-BIN" Name="SE_top.bin"/>
+  <File Type="BG-BIT" Name="SE_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="SE_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="SE_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="SE_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SE_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SE_top_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="SE_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="SE_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="SE_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="SE_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="SE_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="SE_top_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="SE_top_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="SE_top_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="SE_top_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="SE_top_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SE_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SE_top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="SE_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="SE_top_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="SE_top_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="SE_top_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="SE_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="SE_top_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="SE_top_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="SE_top_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="SE_top_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="SE_top_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="SE_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="SE_top_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="SE_top_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="SE_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="SE_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="SE_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="SE_top_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="SE_top_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="SE_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="SE_top_io_placed.rpt"/>
+  <File Type="RDI-RDI" Name="SE_top.vdi"/>
+  <File Type="PWROPT-TIMING" Name="SE_top_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="SE_top_drc_pwropted.rpt"/>
+  <File Type="OPT-TIMING" Name="SE_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="SE_top.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="SE_top_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="SE_top_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="SE_top_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="SE_top_timing_summary_init.rpt"/>
+  <File Type="PWROPT-DCP" Name="SE_top_pwropt.dcp"/>
+  <File Type="REPORTS-TCL" Name="SE_top_reports.tcl"/>
+  <File Type="PLACE-DCP" Name="SE_top_placed.dcp"/>
+  <File Type="PA-TCL" Name="SE_top.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/Reusables/data_sync.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/uart_basic.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/uart_baud_tick_gen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/uart_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/uart_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/FDCE7.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/UART_RX_CTRL.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/bch_7seg.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/clk_divider.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/counter_nbit.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/drv_7seg.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/pb_debouncer.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SE_top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="SE_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/Reusables/Nexys4DDR.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

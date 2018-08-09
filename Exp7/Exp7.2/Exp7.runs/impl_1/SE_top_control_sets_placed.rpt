@@ -1,0 +1,78 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Thu Aug  9 00:18:23 2018
+| Host         : nicolas-xeon running 64-bit unknown
+| Command      : report_control_sets -verbose -file SE_top_control_sets_placed.rpt
+| Design       : SE_top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    26 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              36 |           13 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              78 |           23 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              52 |           20 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+----------------------------------------------+-----------------------------+------------------+----------------+
+|      Clock Signal     |                 Enable Signal                |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++-----------------------+----------------------------------------------+-----------------------------+------------------+----------------+
+|  pantalla/divider/clk |                                              |                             |                1 |              3 |
+|  CLK100MHZ_IBUF_BUFG  | RX_CTRL_inst/FSM_sequential_state[3]_i_1_n_0 | rst_db/rst_n_db             |                3 |              4 |
+|  CLK100MHZ_IBUF_BUFG  | RX_CTRL_inst/FDCE_OP1_LSB/ret_op1_lsb        | rst_db/rst_n_db             |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG  | uart_inst/uart_rx_blk/rx_data[7]_i_1_n_0     | rst_db/rst_n_db             |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG  | RX_CTRL_inst/ret_op2_lsb                     | rst_db/rst_n_db             |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG  | RX_CTRL_inst/FDCE_OP2_MSB/Q[7]_i_1__0_n_0    | rst_db/rst_n_db             |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG  | RX_CTRL_inst/E[0]                            | rst_db/rst_n_db             |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG  | RX_CTRL_inst/FDCE_OP1_MSB/Q[7]_i_1__1_n_0    | rst_db/rst_n_db             |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG  |                                              | rst_db/rst_n_db             |                6 |             13 |
+|  CLK100MHZ_IBUF_BUFG  |                                              | rst_db/PB_cnt               |                4 |             15 |
+|  CLK100MHZ_IBUF_BUFG  |                                              | uart_inst/uart_tx_blk/SR[0] |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG  |                                              | pantalla/divider/clk_out    |                8 |             31 |
+|  CLK100MHZ_IBUF_BUFG  |                                              |                             |               12 |             33 |
++-----------------------+----------------------------------------------+-----------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 3      |                     1 |
+| 4      |                     1 |
+| 8      |                     6 |
+| 13     |                     1 |
+| 15     |                     1 |
+| 16+    |                     3 |
++--------+-----------------------+
+
+
