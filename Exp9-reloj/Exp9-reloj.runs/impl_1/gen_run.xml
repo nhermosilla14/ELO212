@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1534742876">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="Exp9reloj.drc"/>
+  <File Type="BG-BGN" Name="Exp9reloj.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="Exp9reloj.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Exp9reloj.ltx"/>
+  <File Type="BITSTR-MMI" Name="Exp9reloj.mmi"/>
+  <File Type="BITSTR-BMM" Name="Exp9reloj_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="Exp9reloj.nky"/>
+  <File Type="BITSTR-RBT" Name="Exp9reloj.rbt"/>
+  <File Type="BITSTR-MSK" Name="Exp9reloj.msk"/>
+  <File Type="BG-BIN" Name="Exp9reloj.bin"/>
+  <File Type="BG-BIT" Name="Exp9reloj.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Exp9reloj_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Exp9reloj_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Exp9reloj_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Exp9reloj_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Exp9reloj_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="Exp9reloj_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="Exp9reloj_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Exp9reloj_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="Exp9reloj_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Exp9reloj_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Exp9reloj_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="Exp9reloj_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="Exp9reloj_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="Exp9reloj_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Exp9reloj_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Exp9reloj_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Exp9reloj_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Exp9reloj_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="Exp9reloj_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="Exp9reloj_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="Exp9reloj_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Exp9reloj_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="Exp9reloj_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Exp9reloj_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="Exp9reloj_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="Exp9reloj_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Exp9reloj_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Exp9reloj_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Exp9reloj_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="Exp9reloj_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Exp9reloj_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Exp9reloj_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="Exp9reloj_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Exp9reloj_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="Exp9reloj_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Exp9reloj_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="Exp9reloj_io_placed.rpt"/>
+  <File Type="RDI-RDI" Name="Exp9reloj.vdi"/>
+  <File Type="PWROPT-TIMING" Name="Exp9reloj_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="Exp9reloj_drc_pwropted.rpt"/>
+  <File Type="OPT-TIMING" Name="Exp9reloj_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Exp9reloj.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Exp9reloj_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="Exp9reloj_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Exp9reloj_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="Exp9reloj_timing_summary_init.rpt"/>
+  <File Type="PWROPT-DCP" Name="Exp9reloj_pwropt.dcp"/>
+  <File Type="REPORTS-TCL" Name="Exp9reloj_reports.tcl"/>
+  <File Type="PLACE-DCP" Name="Exp9reloj_placed.dcp"/>
+  <File Type="PA-TCL" Name="Exp9reloj.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/Reusables/bch_7seg.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/btn_repeater.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/clk_divider.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/counter_nbit.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/drv_7seg.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/modopm.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/pb_debouncer.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Reusables/unsigned_to_bcd.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Exp9-reloj.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Exp9reloj"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/Reusables/Nexys4DDR.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
