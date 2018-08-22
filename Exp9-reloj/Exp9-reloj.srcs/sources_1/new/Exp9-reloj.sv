@@ -80,18 +80,21 @@ module Exp9reloj(
         counter_nbit #(6) seconds(
                 .clk(seconds_clk),
                 .reset(reset_seconds),
+                .enable(1'b1),
                 .P(cur_seconds)
         );
 
         counter_nbit #(6) minutes(
                 .clk(minutes_clk),
                 .reset(reset_minutes),
+                .enable(1'b1),
                 .P(cur_minutes)
         );
         
         counter_nbit #(6) hours(
                 .clk(hours_clk),
                 .reset(reset_hours),
+                .enable(1'b1),
                 .P(cur_hours)
         );
 ////////////////////////////////////////////////////

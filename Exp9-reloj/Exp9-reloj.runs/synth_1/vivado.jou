@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon Aug 20 02:27:58 2018
-# Process ID: 8001
+# Start of session at: Tue Aug 21 21:38:22 2018
+# Process ID: 5329
 # Current directory: /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9-reloj/Exp9-reloj.runs/synth_1
 # Command line: vivado -log Exp9reloj.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Exp9reloj.tcl
 # Log file: /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9-reloj/Exp9-reloj.runs/synth_1/Exp9reloj.vds

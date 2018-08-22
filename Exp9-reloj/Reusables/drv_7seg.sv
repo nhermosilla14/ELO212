@@ -48,6 +48,7 @@ module drv_7seg
     counter_nbit #(3) counter_an(
     	.clk(clk_mux),
     	.reset(0),
+        .enable(1'b1),
     	.P(cur_an)
     	);
 

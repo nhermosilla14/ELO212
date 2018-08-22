@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-| Date         : Mon Aug 20 02:29:55 2018
+| Date         : Tue Aug 21 21:40:03 2018
 | Host         : nicolas-xeon running 64-bit unknown
 | Command      : report_utilization -file Exp9reloj_utilization_synth.rpt -pb Exp9reloj_utilization_synth.pb
 | Design       : Exp9reloj
@@ -151,9 +151,9 @@ Table of Contents
 | LUT4     |   70 |                 LUT |
 | LUT6     |   61 |                 LUT |
 | CARRY4   |   48 |          CarryLogic |
-| LUT2     |   28 |                 LUT |
-| LUT3     |   23 |                 LUT |
+| LUT2     |   30 |                 LUT |
 | FDCE     |   22 |        Flop & Latch |
+| LUT3     |   21 |                 LUT |
 | OBUF     |   17 |                  IO |
 | LUT1     |   16 |                 LUT |
 | IBUF     |    6 |                  IO |

@@ -22,17 +22,20 @@
 
 module btn_repeater #(parameter COUNTERMAX=3)(
     input logic btn,
-    input logic clk_1,
-    input logic clk_2,
+    input logic clk_1, //clk del contador
+    input logic clk_2, //clk para la salida del repeater
     output logic btn_output
     );
     
     logic [1:0] count;
-    logic reset, clk_counter, btn_turbo, btn_1, clk_counter_2;
+    logic reset, clk_counter, btn_turbo, cnt_en;
     
+    assign clk_counter = clk_1;
+
     counter_nbit #(2) main_counter(
         .clk(clk_counter),
         .reset(reset),
+        .enable(cnt_en),
         .P(count)
     );
 
@@ -53,10 +56,10 @@ module btn_repeater #(parameter COUNTERMAX=3)(
         if (count >= COUNTERMAX)
         begin
             btn_turbo = clk_2; 
-            clk_counter = 1'b0;
+            cnt_en = 1'b0;
         end else begin
             btn_turbo = 1'b0;
-            clk_counter = clk_1;
+            cnt_en = 1'b1;
         end
     end
 
