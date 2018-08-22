@@ -1,0 +1,611 @@
+
+*** Running vivado
+    with args -log SE_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SE_top.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source SE_top.tcl -notrace
+Command: synth_design -top SE_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26988 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1239.969 ; gain = 84.988 ; free physical = 1006 ; free virtual = 11158
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SE_top' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Exp7.srcs/sources_1/new/SE_top.sv:23]
+INFO: [Synth 8-638] synthesizing module 'pb_debouncer' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/pb_debouncer.sv:23]
+	Parameter N bound to: 15 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/pb_debouncer.sv:65]
+INFO: [Synth 8-256] done synthesizing module 'pb_debouncer' (1#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/pb_debouncer.sv:23]
+INFO: [Synth 8-638] synthesizing module 'UART_RX_CTRL' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/UART_RX_CTRL.sv:1]
+	Parameter INTER_BYTE_DELAY bound to: 1000000 - type: integer 
+	Parameter DELAY_FOR_ALU bound to: 100 - type: integer 
+	Parameter Wait_OP1_LSB bound to: 4'b0001 
+	Parameter Store_OP1_LSB bound to: 4'b0010 
+	Parameter Wait_OP1_MSB bound to: 4'b0011 
+	Parameter Store_OP1_MSB bound to: 4'b0100 
+	Parameter Wait_OP2_LSB bound to: 4'b0101 
+	Parameter Store_OP2_LSB bound to: 4'b0110 
+	Parameter Wait_OP2_MSB bound to: 4'b0111 
+	Parameter Store_OP2_MSB bound to: 4'b1000 
+	Parameter Wait_CMD bound to: 4'b1001 
+	Parameter Store_CMD bound to: 4'b1010 
+	Parameter Delay_1_cycle bound to: 4'b1011 
+	Parameter Trigger_TX_result bound to: 4'b1100 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/UART_RX_CTRL.sv:54]
+INFO: [Synth 8-638] synthesizing module 'FDCE7' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/FDCE7.sv:23]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FDCE7' (2#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/FDCE7.sv:23]
+INFO: [Synth 8-638] synthesizing module 'FDCE7__parameterized0' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/FDCE7.sv:23]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FDCE7__parameterized0' (2#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/FDCE7.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'UART_RX_CTRL' (3#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/UART_RX_CTRL.sv:1]
+INFO: [Synth 8-638] synthesizing module 'uart_basic' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/uart_basic.v:10]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/uart_baud_tick_gen.v:11]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter OVERSAMPLING bound to: 8 - type: integer 
+	Parameter ACC_WIDTH bound to: 18 - type: integer 
+	Parameter SHIFT_LIMITER bound to: 7 - type: integer 
+	Parameter INCREMENT bound to: 2416 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/uart_baud_tick_gen.v:38]
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen' (4#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/uart_rx.v:10]
+	Parameter RX_IDLE bound to: 0 - type: integer 
+	Parameter RX_START bound to: 1 - type: integer 
+	Parameter RX_RECV bound to: 2 - type: integer 
+	Parameter RX_STOP bound to: 3 - type: integer 
+	Parameter RX_READY bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'data_sync' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/data_sync.v:11]
+INFO: [Synth 8-256] done synthesizing module 'data_sync' (5#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/data_sync.v:11]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/uart_rx.v:78]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (6#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/uart_rx.v:10]
+INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen__parameterized0' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/uart_baud_tick_gen.v:11]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter OVERSAMPLING bound to: 1 - type: integer 
+	Parameter ACC_WIDTH bound to: 18 - type: integer 
+	Parameter SHIFT_LIMITER bound to: 4 - type: integer 
+	Parameter INCREMENT bound to: 302 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen__parameterized0' (6#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/uart_tx.v:10]
+	Parameter TX_IDLE bound to: 2'b00 
+	Parameter TX_START bound to: 2'b01 
+	Parameter TX_SEND bound to: 2'b10 
+	Parameter TX_STOP bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (7#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/uart_tx.v:10]
+INFO: [Synth 8-256] done synthesizing module 'uart_basic' (8#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/uart_basic.v:10]
+INFO: [Synth 8-638] synthesizing module 'drv_7seg' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/drv_7seg.sv:23]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/clk_divider.sv:23]
+	Parameter COUNTER_MAX bound to: 100000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (9#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/clk_divider.sv:23]
+INFO: [Synth 8-638] synthesizing module 'counter_nbit' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/counter_nbit.sv:4]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_nbit' (10#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/counter_nbit.sv:4]
+INFO: [Synth 8-638] synthesizing module 'bch_7seg' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/bch_7seg.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'bch_7seg' (11#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/bch_7seg.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'drv_7seg' (12#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/drv_7seg.sv:23]
+INFO: [Synth 8-638] synthesizing module 'unsigned_to_bcd' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.2/Reusables/unsigned_to_bcd.sv:22]
+	Parameter S_IDLE bound to: 1 - type: integer 
+	Parameter S_SHIFT bound to: 2 - type: integer 
+	Parameter S_ADD3 bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'unsigned_to_bcd' (13#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.2/Reusables/unsigned_to_bcd.sv:22]
+INFO: [Synth 8-638] synthesizing module 'alu6' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/alu6.sv:23]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'alu6' (14#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/alu6.sv:23]
+INFO: [Synth 8-226] default block is never used [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Exp7.srcs/sources_1/new/SE_top.sv:117]
+INFO: [Synth 8-638] synthesizing module 'UART_TX_control' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/UART_TX_control.sv:1]
+	Parameter INTER_BYTE_DELAY bound to: 1000000 - type: integer 
+	Parameter DELAY_FOR_ALU bound to: 100 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/UART_TX_control.sv:27]
+INFO: [Synth 8-256] done synthesizing module 'UART_TX_control' (15#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/UART_TX_control.sv:1]
+INFO: [Synth 8-256] done synthesizing module 'SE_top' (16#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Exp7.srcs/sources_1/new/SE_top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1282.500 ; gain = 127.520 ; free physical = 1016 ; free virtual = 11169
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1282.500 ; gain = 127.520 ; free physical = 1013 ; free virtual = 11165
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/Nexys4DDR.xdc]
+Finished Parsing XDC File [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/Nexys4DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/Nexys4DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SE_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SE_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1624.750 ; gain = 0.000 ; free physical = 752 ; free virtual = 10906
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:01:12 . Memory (MB): peak = 1624.750 ; gain = 469.770 ; free physical = 804 ; free virtual = 10961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:01:12 . Memory (MB): peak = 1624.750 ; gain = 469.770 ; free physical = 805 ; free virtual = 10961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:12 . Memory (MB): peak = 1624.750 ; gain = 469.770 ; free physical = 807 ; free virtual = 10963
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "PB_cnt0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element PB_cnt_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/pb_debouncer.sv:108]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_RX_CTRL'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "trigger_tx_result" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_cmd" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_op2_lsb" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_op2_msb" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_op1_lsb" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_op1_msb" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-5544] ROM "rx_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "idle" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bcd_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "counter_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_TX_control'
+INFO: [Synth 8-5544] ROM "busy" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_start" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_data16" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element hold_state_timer_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/UART_TX_control.sv:79]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            Wait_OP1_LSB |                             0000 |                             0001
+           Store_OP1_LSB |                             0001 |                             0010
+            Wait_OP1_MSB |                             0010 |                             0011
+           Store_OP1_MSB |                             0011 |                             0100
+            Wait_OP2_LSB |                             0100 |                             0101
+           Store_OP2_LSB |                             0101 |                             0110
+            Wait_OP2_MSB |                             0110 |                             0111
+           Store_OP2_MSB |                             0111 |                             1000
+                Wait_CMD |                             1000 |                             1001
+               Store_CMD |                             1001 |                             1010
+           Delay_1_cycle |                             1010 |                             1011
+       Trigger_TX_result |                             1011 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'UART_RX_CTRL'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RX_IDLE |                              000 |                              000
+                RX_START |                              001 |                              001
+                 RX_RECV |                              010 |                              010
+                 RX_STOP |                              011 |                              011
+                RX_READY |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+            WAIT_FOR_ALU |                              001 |                              001
+             SEND_BYTE_0 |                              010 |                              010
+            DELAY_BYTE_0 |                              011 |                              011
+             SEND_BYTE_1 |                              100 |                              100
+            DELAY_BYTE_1 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'UART_TX_control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:01:14 . Memory (MB): peak = 1624.750 ; gain = 469.770 ; free physical = 794 ; free virtual = 10952
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 8     
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               19 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 8     
+	   6 Input      8 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SE_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module pb_debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module FDCE7 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module FDCE7__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module UART_RX_CTRL 
+Detailed RTL Component Info : 
++---Muxes : 
+	  12 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 7     
+Module uart_baud_tick_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+Module data_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+Module uart_baud_tick_gen__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module uart_basic 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module clk_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter_nbit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module drv_7seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module unsigned_to_bcd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 8     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+Module alu6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
++---Muxes : 
+	   5 Input      1 Bit        Muxes := 3     
+Module UART_TX_control 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element rst_db/PB_negedge_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/pb_debouncer.sv:106]
+WARNING: [Synth 8-6014] Unused sequential element rst_db/PB_posedge_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/pb_debouncer.sv:107]
+INFO: [Synth 8-5545] ROM "pantalla/divider/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pantalla/divider/clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element rst_db/PB_cnt_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/pb_debouncer.sv:108]
+WARNING: [Synth 8-6014] Unused sequential element utxctl/hold_state_timer_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Reusables/UART_TX_control.sv:79]
+WARNING: [Synth 8-3917] design SE_top has port D7S[7] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:17 . Memory (MB): peak = 1624.750 ; gain = 469.770 ; free physical = 775 ; free virtual = 10934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:34 . Memory (MB): peak = 1624.750 ; gain = 469.770 ; free physical = 621 ; free virtual = 10789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:36 . Memory (MB): peak = 1628.750 ; gain = 473.770 ; free physical = 611 ; free virtual = 10780
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:36 . Memory (MB): peak = 1636.758 ; gain = 481.777 ; free physical = 609 ; free virtual = 10777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:37 . Memory (MB): peak = 1636.758 ; gain = 481.777 ; free physical = 607 ; free virtual = 10777
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:37 . Memory (MB): peak = 1636.758 ; gain = 481.777 ; free physical = 607 ; free virtual = 10777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:37 . Memory (MB): peak = 1636.758 ; gain = 481.777 ; free physical = 607 ; free virtual = 10777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:37 . Memory (MB): peak = 1636.758 ; gain = 481.777 ; free physical = 608 ; free virtual = 10779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:01:37 . Memory (MB): peak = 1636.758 ; gain = 481.777 ; free physical = 608 ; free virtual = 10779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:06 ; elapsed = 00:01:37 . Memory (MB): peak = 1636.758 ; gain = 481.777 ; free physical = 608 ; free virtual = 10779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    37|
+|3     |LUT1   |    15|
+|4     |LUT2   |    46|
+|5     |LUT3   |    41|
+|6     |LUT4   |    67|
+|7     |LUT5   |    39|
+|8     |LUT6   |    73|
+|9     |MUXF7  |    13|
+|10    |MUXF8  |     4|
+|11    |FDRE   |   288|
+|12    |FDSE   |     5|
+|13    |IBUF   |     3|
+|14    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+-----------------------------------+------+
+|      |Instance           |Module                             |Cells |
++------+-------------------+-----------------------------------+------+
+|1     |top                |                                   |   656|
+|2     |  RX_CTRL_inst     |UART_RX_CTRL                       |   149|
+|3     |    FDCE_CMD       |FDCE7__parameterized0              |    30|
+|4     |    FDCE_OP1_LSB   |FDCE7                              |    20|
+|5     |    FDCE_OP1_MSB   |FDCE7_0                            |    22|
+|6     |    FDCE_OP2_LSB   |FDCE7_1                            |    31|
+|7     |    FDCE_OP2_MSB   |FDCE7_2                            |    32|
+|8     |  alu              |alu6                               |     8|
+|9     |  nolabel_line95   |unsigned_to_bcd                    |   158|
+|10    |  pantalla         |drv_7seg                           |    66|
+|11    |    counter_an     |counter_nbit                       |    14|
+|12    |    divider        |clk_divider                        |    52|
+|13    |  rst_db           |pb_debouncer                       |    34|
+|14    |  uart_inst        |uart_basic                         |   126|
+|15    |    baud8_tick_blk |uart_baud_tick_gen                 |    29|
+|16    |    baud_tick_blk  |uart_baud_tick_gen__parameterized0 |    29|
+|17    |    uart_rx_blk    |uart_rx                            |    43|
+|18    |      rx_sync_inst |data_sync                          |     9|
+|19    |    uart_tx_blk    |uart_tx                            |    23|
+|20    |  utxctl           |UART_TX_control                    |    87|
++------+-------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:06 ; elapsed = 00:01:37 . Memory (MB): peak = 1636.758 ; gain = 481.777 ; free physical = 608 ; free virtual = 10779
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 1636.758 ; gain = 139.527 ; free physical = 661 ; free virtual = 10832
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:37 . Memory (MB): peak = 1636.766 ; gain = 481.777 ; free physical = 661 ; free virtual = 10832
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+87 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:41 . Memory (MB): peak = 1636.766 ; gain = 495.168 ; free physical = 644 ; free virtual = 10825
+INFO: [Common 17-1381] The checkpoint '/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp7/Exp7.3/Exp7.runs/synth_1/SE_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SE_top_utilization_synth.rpt -pb SE_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1660.770 ; gain = 0.000 ; free physical = 657 ; free virtual = 10825
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  9 02:11:25 2018...
