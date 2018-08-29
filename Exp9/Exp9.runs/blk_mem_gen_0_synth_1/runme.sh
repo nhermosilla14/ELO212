@@ -7,16 +7,16 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/home/nicolas/.local/opt/Xilinx/SDK/2017.4/bin:/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/lin64:/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/bin
+  PATH=/home/nicolas/.local/Xilinx/SDK/2017.4/bin:/home/nicolas/.local/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/lin64:/home/nicolas/.local/Xilinx/Vivado/2017.4/bin
 else
-  PATH=/home/nicolas/.local/opt/Xilinx/SDK/2017.4/bin:/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/lin64:/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/bin:$PATH
+  PATH=/home/nicolas/.local/Xilinx/SDK/2017.4/bin:/home/nicolas/.local/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/lin64:/home/nicolas/.local/Xilinx/Vivado/2017.4/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=/home/nicolas/.local/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/lin64
 else
-  LD_LIBRARY_PATH=/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=/home/nicolas/.local/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 

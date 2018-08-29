@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1534911712">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1535147646">
   <File Type="VDS-TIMING-PB" Name="lab_9_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="lab_9_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="lab_9.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="lab_9_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="lab_9_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="lab_9_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="lab_9.vds"/>
-  <File Type="REPORTS-TCL" Name="lab_9_reports.tcl"/>
   <File Type="PA-TCL" Name="lab_9.tcl"/>
+  <File Type="REPORTS-TCL" Name="lab_9_reports.tcl"/>
+  <File Type="RDS-RDS" Name="lab_9.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="lab_9_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="lab_9_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="lab_9_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/Reusables/clk_divider.sv">
@@ -89,6 +89,34 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/Referencias/lab_9.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/filtro1.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/matrix_index.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dith_simple.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/filtrogris.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

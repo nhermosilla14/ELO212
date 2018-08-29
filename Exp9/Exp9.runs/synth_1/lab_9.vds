@@ -2,12 +2,12 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Wed Aug 22 01:21:54 2018
-# Process ID: 12226
-# Current directory: /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1
+# Start of session at: Fri Aug 24 18:54:09 2018
+# Process ID: 22012
+# Current directory: /home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1
 # Command line: vivado -log lab_9.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab_9.tcl
-# Log file: /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/lab_9.vds
-# Journal file: /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/vivado.jou
+# Log file: /home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/lab_9.vds
+# Journal file: /home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source lab_9.tcl -notrace
 Command: synth_design -top lab_9 -part xc7a100tcsg324-1
@@ -15,15 +15,15 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12238 
+INFO: Helper process launched with PID 22073 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1251.422 ; gain = 84.992 ; free physical = 1558 ; free virtual = 11622
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1273.238 ; gain = 84.988 ; free physical = 1298 ; free virtual = 6422
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'lab_9' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Referencias/lab_9.sv:3]
-	Parameter CUADRILLA_XI bound to: 212 - type: integer 
-	Parameter CUADRILLA_XF bound to: 852 - type: integer 
-	Parameter CUADRILLA_YI bound to: 250 - type: integer 
-	Parameter CUADRILLA_YF bound to: 730 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'lab_9' [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Referencias/lab_9.sv:3]
+	Parameter CUADRILLA_XI bound to: 0 - type: integer 
+	Parameter CUADRILLA_XF bound to: 512 - type: integer 
+	Parameter CUADRILLA_YI bound to: 0 - type: integer 
+	Parameter CUADRILLA_YF bound to: 392 - type: integer 
 	Parameter COLOR_BLUE bound to: 12'b000000001111 
 	Parameter COLOR_YELLOW bound to: 12'b111111110000 
 	Parameter COLOR_RED bound to: 12'b111100000000 
@@ -31,57 +31,57 @@ INFO: [Synth 8-638] synthesizing module 'lab_9' [/home/nicolas/Documentos/ELO/Di
 	Parameter COLOR_WHITE bound to: 12'b111111111111 
 	Parameter COLOR_CYAN bound to: 12'b000011111111 
 	Parameter COLOR_GREY bound to: 12'b010001000100 
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-12226-nicolas-xeon/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-12226-nicolas-xeon/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-638] synthesizing module 'uart_basic' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_basic.v:10]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-22012-benjamin-VirtualBox/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-22012-benjamin-VirtualBox/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'uart_basic' [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_basic.v:10]
 	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
 	Parameter BAUD_RATE bound to: 115200 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen' [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_baud_tick_gen.v:11]
 	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
 	Parameter BAUD_RATE bound to: 115200 - type: integer 
 	Parameter OVERSAMPLING bound to: 8 - type: integer 
 	Parameter ACC_WIDTH bound to: 18 - type: integer 
 	Parameter SHIFT_LIMITER bound to: 7 - type: integer 
 	Parameter INCREMENT bound to: 2416 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_baud_tick_gen.v:38]
-INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen' (2#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_baud_tick_gen.v:11]
-INFO: [Synth 8-638] synthesizing module 'uart_rx' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_rx.v:10]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_baud_tick_gen.v:38]
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen' (2#1) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_rx.v:10]
 	Parameter RX_IDLE bound to: 0 - type: integer 
 	Parameter RX_START bound to: 1 - type: integer 
 	Parameter RX_RECV bound to: 2 - type: integer 
 	Parameter RX_STOP bound to: 3 - type: integer 
 	Parameter RX_READY bound to: 4 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'data_sync' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/data_sync.v:11]
-INFO: [Synth 8-256] done synthesizing module 'data_sync' (3#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/data_sync.v:11]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_rx.v:78]
-INFO: [Synth 8-256] done synthesizing module 'uart_rx' (4#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_rx.v:10]
-INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen__parameterized0' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'data_sync' [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/data_sync.v:11]
+INFO: [Synth 8-256] done synthesizing module 'data_sync' (3#1) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/data_sync.v:11]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_rx.v:78]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (4#1) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_rx.v:10]
+INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen__parameterized0' [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_baud_tick_gen.v:11]
 	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
 	Parameter BAUD_RATE bound to: 115200 - type: integer 
 	Parameter OVERSAMPLING bound to: 1 - type: integer 
 	Parameter ACC_WIDTH bound to: 18 - type: integer 
 	Parameter SHIFT_LIMITER bound to: 4 - type: integer 
 	Parameter INCREMENT bound to: 302 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen__parameterized0' (4#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_baud_tick_gen.v:11]
-INFO: [Synth 8-638] synthesizing module 'uart_tx' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_tx.v:10]
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen__parameterized0' (4#1) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_tx.v:10]
 	Parameter TX_IDLE bound to: 2'b00 
 	Parameter TX_START bound to: 2'b01 
 	Parameter TX_SEND bound to: 2'b10 
 	Parameter TX_STOP bound to: 2'b11 
-INFO: [Synth 8-256] done synthesizing module 'uart_tx' (5#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_tx.v:10]
-INFO: [Synth 8-256] done synthesizing module 'uart_basic' (6#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_basic.v:10]
-INFO: [Synth 8-638] synthesizing module 'UART_RX_CTRL' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/UART_RX_CTRL.sv:1]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/UART_RX_CTRL.sv:28]
-INFO: [Synth 8-638] synthesizing module 'FDCE7' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/FDCE7.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (5#1) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_tx.v:10]
+INFO: [Synth 8-256] done synthesizing module 'uart_basic' (6#1) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/uart_basic.v:10]
+INFO: [Synth 8-638] synthesizing module 'UART_RX_CTRL' [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/UART_RX_CTRL.sv:1]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/UART_RX_CTRL.sv:28]
+INFO: [Synth 8-638] synthesizing module 'FDCE7' [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/FDCE7.sv:23]
 	Parameter N bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'FDCE7' (7#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/FDCE7.sv:23]
-INFO: [Synth 8-256] done synthesizing module 'UART_RX_CTRL' (8#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/UART_RX_CTRL.sv:1]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-12226-nicolas-xeon/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (9#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-12226-nicolas-xeon/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'counter_nbit' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/counter_nbit.sv:4]
-	Parameter n bound to: 19 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counter_nbit' (10#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/counter_nbit.sv:4]
-INFO: [Synth 8-638] synthesizing module 'driver_vga_1024x768' [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Referencias/driver_vga_1024x768.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'FDCE7' (7#1) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/FDCE7.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'UART_RX_CTRL' (8#1) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/UART_RX_CTRL.sv:1]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-22012-benjamin-VirtualBox/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (9#1) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-22012-benjamin-VirtualBox/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'counter_nbit' [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/counter_nbit.sv:4]
+	Parameter n bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_nbit' (10#1) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/counter_nbit.sv:4]
+INFO: [Synth 8-638] synthesizing module 'driver_vga_1024x768' [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Referencias/driver_vga_1024x768.sv:23]
 	Parameter hpixels bound to: 11'b10101010000 
 	Parameter vlines bound to: 11'b01100100101 
 	Parameter hfp bound to: 11'b00001000000 
@@ -90,13 +90,23 @@ INFO: [Synth 8-638] synthesizing module 'driver_vga_1024x768' [/home/nicolas/Doc
 	Parameter vfp bound to: 11'b00000000011 
 	Parameter vsc bound to: 11'b00000000100 
 	Parameter vbp bound to: 11'b00000011110 
-INFO: [Synth 8-256] done synthesizing module 'driver_vga_1024x768' (11#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Referencias/driver_vga_1024x768.sv:23]
-INFO: [Synth 8-256] done synthesizing module 'lab_9' (12#1) [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Referencias/lab_9.sv:3]
-WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[2]
+INFO: [Synth 8-256] done synthesizing module 'driver_vga_1024x768' (11#1) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Referencias/driver_vga_1024x768.sv:23]
+INFO: [Synth 8-638] synthesizing module 'filtro1' [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.srcs/sources_1/new/filtro1.sv:1]
+INFO: [Synth 8-256] done synthesizing module 'filtro1' (12#1) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.srcs/sources_1/new/filtro1.sv:1]
+INFO: [Synth 8-638] synthesizing module 'filtrogris' [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.srcs/sources_1/new/filtrogris.sv:1]
+INFO: [Synth 8-256] done synthesizing module 'filtrogris' (13#1) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.srcs/sources_1/new/filtrogris.sv:1]
+INFO: [Synth 8-256] done synthesizing module 'lab_9' (14#1) [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Referencias/lab_9.sv:3]
+WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[9]
+WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[8]
+WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[7]
+WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[6]
+WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[5]
+WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[4]
+WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[3]
 WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[1]
 WARNING: [Synth 8-3331] design lab_9 has unconnected port CPU_RESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1292.953 ; gain = 126.523 ; free physical = 1568 ; free virtual = 11633
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1314.770 ; gain = 126.520 ; free physical = 1320 ; free virtual = 6444
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -106,47 +116,47 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1292.953 ; gain = 126.523 ; free physical = 1569 ; free virtual = 11635
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1314.770 ; gain = 126.520 ; free physical = 1319 ; free virtual = 6444
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-12226-nicolas-xeon/dcp2/clk_wiz_0_in_context.xdc] for cell 'ins'
-Finished Parsing XDC File [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-12226-nicolas-xeon/dcp2/clk_wiz_0_in_context.xdc] for cell 'ins'
-Parsing XDC File [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-12226-nicolas-xeon/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'blkmem'
-Finished Parsing XDC File [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-12226-nicolas-xeon/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'blkmem'
-Parsing XDC File [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.srcs/constrs_1/imports/Reusables/Nexys4DDR.xdc]
-Finished Parsing XDC File [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.srcs/constrs_1/imports/Reusables/Nexys4DDR.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.srcs/constrs_1/imports/Reusables/Nexys4DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab_9_propImpl.xdc].
+Parsing XDC File [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-22012-benjamin-VirtualBox/dcp2/clk_wiz_0_in_context.xdc] for cell 'ins'
+Finished Parsing XDC File [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-22012-benjamin-VirtualBox/dcp2/clk_wiz_0_in_context.xdc] for cell 'ins'
+Parsing XDC File [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-22012-benjamin-VirtualBox/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'blkmem'
+Finished Parsing XDC File [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-22012-benjamin-VirtualBox/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'blkmem'
+Parsing XDC File [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.srcs/constrs_1/imports/Reusables/Nexys4DDR.xdc]
+Finished Parsing XDC File [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.srcs/constrs_1/imports/Reusables/Nexys4DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.srcs/constrs_1/imports/Reusables/Nexys4DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab_9_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/lab_9_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1635.609 ; gain = 0.000 ; free physical = 1308 ; free virtual = 11380
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1657.441 ; gain = 0.000 ; free physical = 954 ; free virtual = 6079
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'blkmem' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:01:06 . Memory (MB): peak = 1635.609 ; gain = 469.180 ; free physical = 1384 ; free virtual = 11456
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:49 . Memory (MB): peak = 1657.441 ; gain = 469.191 ; free physical = 1126 ; free virtual = 6250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:01:06 . Memory (MB): peak = 1635.609 ; gain = 469.180 ; free physical = 1384 ; free virtual = 11456
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:49 . Memory (MB): peak = 1657.441 ; gain = 469.191 ; free physical = 1126 ; free virtual = 6250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-12226-nicolas-xeon/dcp2/clk_wiz_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-12226-nicolas-xeon/dcp2/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  /home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-22012-benjamin-VirtualBox/dcp2/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  /home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/.Xil/Vivado-22012-benjamin-VirtualBox/dcp2/clk_wiz_0_in_context.xdc, line 5).
 Applied set_property DONT_TOUCH = true for blkmem. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for ins. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:01:06 . Memory (MB): peak = 1635.609 ; gain = 469.180 ; free physical = 1386 ; free virtual = 11458
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:49 . Memory (MB): peak = 1657.441 ; gain = 469.191 ; free physical = 1128 ; free virtual = 6252
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
 INFO: [Synth 8-5544] ROM "rx_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -160,7 +170,7 @@ INFO: [Synth 8-5544] ROM "ret_bg" won't be mapped to Block RAM because address s
 INFO: [Synth 8-5544] ROM "ret_br" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/counter_nbit.sv:24]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/counter_nbit.sv:24]
 INFO: [Synth 8-5546] ROM "reset_addra0" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -185,7 +195,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'UART_RX_CTRL'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:01:07 . Memory (MB): peak = 1635.609 ; gain = 469.180 ; free physical = 1377 ; free virtual = 11449
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:49 . Memory (MB): peak = 1657.441 ; gain = 469.191 ; free physical = 1119 ; free virtual = 6244
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -199,7 +209,8 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     19 Bit       Adders := 2     
-	   2 Input     12 Bit       Adders := 4     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
 	   2 Input     11 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 3     
 	   2 Input      2 Bit       Adders := 1     
@@ -209,10 +220,12 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 5     
 	                3 Bit    Registers := 3     
 	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 5     
+	                1 Bit    Registers := 4     
 +---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
 	   2 Input     12 Bit        Muxes := 6     
 	   2 Input     11 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 3     
 	   4 Input      3 Bit        Muxes := 3     
 	   6 Input      3 Bit        Muxes := 1     
 	   7 Input      3 Bit        Muxes := 1     
@@ -234,10 +247,10 @@ Hierarchical RTL Component report
 Module lab_9 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     12 Bit       Adders := 2     
+	   2 Input     18 Bit       Adders := 1     
 +---Registers : 
 	               12 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 1     
@@ -313,6 +326,14 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 3     
 	   2 Input     11 Bit        Muxes := 2     
+Module filtro1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 3     
+Module filtrogris 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -329,12 +350,16 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "reset_addra0" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element addra_counter/count_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/counter_nbit.sv:24]
-WARNING: [Synth 8-6014] Unused sequential element addrb_counter/count_reg was removed.  [/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/counter_nbit.sv:24]
-WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[2]
+WARNING: [Synth 8-6014] Unused sequential element addra_counter/count_reg was removed.  [/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Reusables/counter_nbit.sv:24]
+WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[9]
+WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[8]
+WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[7]
+WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[6]
+WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[5]
+WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[4]
+WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[3]
 WARNING: [Synth 8-3331] design lab_9 has unconnected port SW[1]
 WARNING: [Synth 8-3331] design lab_9 has unconnected port CPU_RESETN
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (reset_addrb_reg)
 WARNING: [Synth 8-3332] Sequential element (uart_/uart_tx_blk/tx_data_reg_reg[7]) is unused and will be removed from module lab_9.
 WARNING: [Synth 8-3332] Sequential element (uart_/uart_tx_blk/tx_data_reg_reg[6]) is unused and will be removed from module lab_9.
 WARNING: [Synth 8-3332] Sequential element (uart_/uart_tx_blk/tx_data_reg_reg[5]) is unused and will be removed from module lab_9.
@@ -343,25 +368,8 @@ WARNING: [Synth 8-3332] Sequential element (uart_/uart_tx_blk/tx_data_reg_reg[3]
 WARNING: [Synth 8-3332] Sequential element (uart_/uart_tx_blk/tx_data_reg_reg[2]) is unused and will be removed from module lab_9.
 WARNING: [Synth 8-3332] Sequential element (uart_/uart_tx_blk/tx_data_reg_reg[1]) is unused and will be removed from module lab_9.
 WARNING: [Synth 8-3332] Sequential element (uart_/uart_tx_blk/tx_data_reg_reg[0]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (reset_addrb_reg) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (uart_/uart_rx_blk/rx_data_reg[3]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (uart_/uart_rx_blk/rx_data_reg[2]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (uart_/uart_rx_blk/rx_data_reg[1]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (uart_/uart_rx_blk/rx_data_reg[0]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (video_input_port/FDCE_BB/Q_reg[3]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (video_input_port/FDCE_BB/Q_reg[2]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (video_input_port/FDCE_BB/Q_reg[1]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (video_input_port/FDCE_BB/Q_reg[0]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (video_input_port/FDCE_BG/Q_reg[3]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (video_input_port/FDCE_BG/Q_reg[2]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (video_input_port/FDCE_BG/Q_reg[1]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (video_input_port/FDCE_BG/Q_reg[0]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (video_input_port/FDCE_BR/Q_reg[3]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (video_input_port/FDCE_BR/Q_reg[2]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (video_input_port/FDCE_BR/Q_reg[1]) is unused and will be removed from module lab_9.
-WARNING: [Synth 8-3332] Sequential element (video_input_port/FDCE_BR/Q_reg[0]) is unused and will be removed from module lab_9.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:01:09 . Memory (MB): peak = 1635.609 ; gain = 469.180 ; free physical = 1362 ; free virtual = 11435
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:52 . Memory (MB): peak = 1657.441 ; gain = 469.191 ; free physical = 1099 ; free virtual = 6224
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -376,13 +384,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'ins/clk_out1' to pin 'ins
 INFO: [Synth 8-5578] Moved timing constraint from pin 'ins/clk_out2' to pin 'ins/bbstub_clk_out2/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:24 . Memory (MB): peak = 1635.609 ; gain = 469.180 ; free physical = 1217 ; free virtual = 11313
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:01:04 . Memory (MB): peak = 1657.441 ; gain = 469.191 ; free physical = 975 ; free virtual = 6100
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:24 . Memory (MB): peak = 1635.609 ; gain = 469.180 ; free physical = 1215 ; free virtual = 11311
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:04 . Memory (MB): peak = 1657.441 ; gain = 469.191 ; free physical = 975 ; free virtual = 6099
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -399,7 +407,7 @@ WARNING: [Synth 8-3332] Sequential element (uart_/uart_tx_blk/counter_reg[0]) is
 WARNING: [Synth 8-3332] Sequential element (uart_/uart_tx_blk/state_reg[1]) is unused and will be removed from module lab_9.
 WARNING: [Synth 8-3332] Sequential element (uart_/uart_tx_blk/state_reg[0]) is unused and will be removed from module lab_9.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:25 . Memory (MB): peak = 1635.609 ; gain = 469.180 ; free physical = 1216 ; free virtual = 11311
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:01:04 . Memory (MB): peak = 1657.441 ; gain = 469.191 ; free physical = 974 ; free virtual = 6098
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -423,7 +431,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:26 . Memory (MB): peak = 1635.609 ; gain = 469.180 ; free physical = 1214 ; free virtual = 11309
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:01:05 . Memory (MB): peak = 1657.441 ; gain = 469.191 ; free physical = 974 ; free virtual = 6098
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -436,7 +444,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:26 . Memory (MB): peak = 1635.609 ; gain = 469.180 ; free physical = 1214 ; free virtual = 11309
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:01:05 . Memory (MB): peak = 1657.441 ; gain = 469.191 ; free physical = 974 ; free virtual = 6098
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -448,25 +456,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:26 . Memory (MB): peak = 1635.609 ; gain = 469.180 ; free physical = 1213 ; free virtual = 11309
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:01:05 . Memory (MB): peak = 1657.441 ; gain = 469.191 ; free physical = 975 ; free virtual = 6100
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:26 . Memory (MB): peak = 1635.609 ; gain = 469.180 ; free physical = 1213 ; free virtual = 11309
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:01:05 . Memory (MB): peak = 1657.441 ; gain = 469.191 ; free physical = 975 ; free virtual = 6100
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:26 . Memory (MB): peak = 1635.609 ; gain = 469.180 ; free physical = 1213 ; free virtual = 11309
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:01:05 . Memory (MB): peak = 1657.441 ; gain = 469.191 ; free physical = 975 ; free virtual = 6100
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:26 . Memory (MB): peak = 1635.609 ; gain = 469.180 ; free physical = 1213 ; free virtual = 11309
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:01:05 . Memory (MB): peak = 1657.441 ; gain = 469.191 ; free physical = 975 ; free virtual = 6100
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -486,46 +494,46 @@ Report Cell Usage:
 +------+--------------+------+
 |1     |blk_mem_gen_0 |     1|
 |2     |clk_wiz_0     |     1|
-|3     |CARRY4        |    25|
-|4     |LUT1          |    13|
-|5     |LUT2          |    17|
-|6     |LUT3          |    14|
-|7     |LUT4          |    15|
-|8     |LUT5          |    15|
-|9     |LUT6          |    28|
-|10    |FDCE          |    19|
-|11    |FDRE          |   124|
+|3     |CARRY4        |    29|
+|4     |LUT1          |    14|
+|5     |LUT2          |    23|
+|6     |LUT3          |    17|
+|7     |LUT4          |    65|
+|8     |LUT5          |    40|
+|9     |LUT6          |    48|
+|10    |FDCE          |    18|
+|11    |FDRE          |   121|
 |12    |FDSE          |     5|
-|13    |IBUF          |     2|
-|14    |OBUF          |    14|
+|13    |IBUF          |     9|
+|14    |OBUF          |    30|
 +------+--------------+------+
 
 Report Instance Areas: 
 +------+-------------------+-----------------------------------+------+
 |      |Instance           |Module                             |Cells |
 +------+-------------------+-----------------------------------+------+
-|1     |top                |                                   |   318|
-|2     |  addrb_counter    |counter_nbit_0                     |    25|
-|3     |  addra_counter    |counter_nbit                       |    29|
-|4     |  nolabel_line104  |driver_vga_1024x768                |    80|
-|5     |  uart_            |uart_basic                         |    97|
+|1     |top                |                                   |   446|
+|2     |  addra_counter    |counter_nbit                       |    28|
+|3     |  filtgr           |filtrogris                         |    78|
+|4     |  nolabel_line105  |driver_vga_1024x768                |   126|
+|5     |  uart_            |uart_basic                         |   101|
 |6     |    baud8_tick_blk |uart_baud_tick_gen                 |    29|
 |7     |    baud_tick_blk  |uart_baud_tick_gen__parameterized0 |    29|
-|8     |    uart_rx_blk    |uart_rx                            |    37|
+|8     |    uart_rx_blk    |uart_rx                            |    41|
 |9     |      rx_sync_inst |data_sync                          |     9|
-|10    |  video_input_port |UART_RX_CTRL                       |    22|
-|11    |    FDCE_BB        |FDCE7                              |     4|
-|12    |    FDCE_BG        |FDCE7_1                            |     4|
-|13    |    FDCE_BR        |FDCE7_2                            |     4|
+|10    |  video_input_port |UART_RX_CTRL                       |    34|
+|11    |    FDCE_BB        |FDCE7                              |     8|
+|12    |    FDCE_BG        |FDCE7_0                            |     8|
+|13    |    FDCE_BR        |FDCE7_1                            |     8|
 +------+-------------------+-----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:26 . Memory (MB): peak = 1635.609 ; gain = 469.180 ; free physical = 1213 ; free virtual = 11309
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:01:05 . Memory (MB): peak = 1657.441 ; gain = 469.191 ; free physical = 975 ; free virtual = 6100
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1635.609 ; gain = 126.523 ; free physical = 1268 ; free virtual = 11363
-Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:26 . Memory (MB): peak = 1635.617 ; gain = 469.180 ; free physical = 1268 ; free virtual = 11363
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1657.441 ; gain = 126.520 ; free physical = 1026 ; free virtual = 6151
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:01:05 . Memory (MB): peak = 1657.449 ; gain = 469.191 ; free physical = 1034 ; free virtual = 6159
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -533,10 +541,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-61 Infos, 40 Warnings, 0 Critical Warnings and 0 Errors encountered.
+64 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:29 . Memory (MB): peak = 1635.617 ; gain = 494.020 ; free physical = 1269 ; free virtual = 11365
-INFO: [Common 17-1381] The checkpoint '/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/lab_9.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:09 . Memory (MB): peak = 1657.449 ; gain = 494.035 ; free physical = 1026 ; free virtual = 6151
+INFO: [Common 17-1381] The checkpoint '/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/lab_9.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file lab_9_utilization_synth.rpt -pb lab_9_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1659.621 ; gain = 0.000 ; free physical = 1269 ; free virtual = 11365
-INFO: [Common 17-206] Exiting Vivado at Wed Aug 22 01:23:38 2018...
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1681.453 ; gain = 0.000 ; free physical = 1025 ; free virtual = 6150
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 24 18:55:43 2018...

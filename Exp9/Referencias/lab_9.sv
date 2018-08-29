@@ -2,16 +2,18 @@
 
 module lab_9(
 	input logic CLK100MHZ,
-	input logic [2:0]SW,
+	input logic [15:0]SW,
 	input logic CPU_RESETN,
         input logic uart_rx_usb,
 	output logic VGA_HS,
 	output logic VGA_VS,
 	output logic [3:0] VGA_R,
 	output logic [3:0] VGA_G,
-	output logic [3:0] VGA_B
+	output logic [3:0] VGA_B,
+        output logic [15:0] LED
 	);
 
+      
         logic clk100mhz_clkwiz;
         logic clk_vga;    
         logic [11:0] VGA_COLOR;  
@@ -21,10 +23,12 @@ module lab_9(
         assign rx_line = uart_rx_usb;
 
         logic [7:0] rx_data;
-        logic [11:0] video_data, image_cur_pix;
-        logic [18:0] addra, addrb;
-        logic reset_addra, reset_addrb, addra_count_en, addrb_count_en;
+        logic [23:0] video_data, image_cur_pix, image_cur_pix_1, image_cur_pix_2;
+        logic [11:0] image_cur_pix_12;
+        logic [17:0] addra, addrb;
+        logic reset_addra, addra_count_en;
         assign addra_count_en = 1'b1;
+        assign LED = addra[15:0];
 ////////////////////////////////////////////////
 //Reloj de la salida VGA
 //Debe usarse igualmente en la BRAM, puerto B
@@ -75,29 +79,26 @@ module lab_9(
                 .clka(clk100mhz_clkwiz),
                 .addra(addra),
                 .dina(video_data),
-                .douta(),
                 .wea(rx_ready_12),
                 .clkb(clk_vga),
                 .addrb(addrb),
-                .dinb(19'b0),
-                .doutb(image_cur_pix),
-                .web(1'b0)
+                .doutb(image_cur_pix)
         );
 
 
-        counter_nbit #(19) addra_counter(
+        counter_nbit #(18) addra_counter(
                 .clk(rx_ready_12),
                 .reset(reset_addra),
                 .enable(addra_count_en),
                 .P(addra)
         );
 
-        counter_nbit #(19) addrb_counter(
-                .clk(clk_vga),
-                .reset(reset_addrb),
-                .enable(addrb_count_en),
-                .P(addrb)
-        );
+//        counter_nbit #(18) addrb_counter(
+//                .clk(clk_vga),
+//                .reset(reset_addrb),
+//                .enable(addrb_count_en),
+//                .P()
+//        );
 /////////////////////////////////////////////////////
 // Driver de la pantalla
 // Aquí se mandan las señales de color a la pantalla
@@ -110,12 +111,14 @@ module lab_9(
         );
 
 /////////////////////////////////////////////////////
+
+
 //Constantes de configuración
-        localparam CUADRILLA_XI     = 212;
-        localparam CUADRILLA_XF     = CUADRILLA_XI + 640;
+        localparam CUADRILLA_XI     = 0;
+        localparam CUADRILLA_XF     = CUADRILLA_XI + 512;
          
-        localparam CUADRILLA_YI     = 250;
-        localparam CUADRILLA_YF     = CUADRILLA_YI + 480;
+        localparam CUADRILLA_YI     = 0;
+        localparam CUADRILLA_YF     = CUADRILLA_YI + 392;
         localparam COLOR_BLUE       = 12'h00F;
         localparam COLOR_YELLOW     = 12'hFF0;
         localparam COLOR_RED        = 12'hF00;
@@ -130,7 +133,7 @@ module lab_9(
         logic CERCA_DE_LA_CUADRILLA;
         assign DENTRO_DE_LA_PANTALLA = (( hc_visible != 0) && ( vc_visible != 0));
         assign DENTRO_DE_LA_CUADRILLA = ((hc_visible > CUADRILLA_XI) && (hc_visible <= CUADRILLA_XF) && (vc_visible > CUADRILLA_YI) && (vc_visible <= CUADRILLA_YF));
-        assign CERCA_DE_LA_CUADRILLA = (((hc_visible + 11'd2) > CUADRILLA_XI) && (hc_visible-2 <= CUADRILLA_XF) && (vc_visible > CUADRILLA_YI) && (vc_visible <= CUADRILLA_YF));
+//        assign CERCA_DE_LA_CUADRILLA = (((hc_visible + 11'd2) > CUADRILLA_XI) && (hc_visible-2 <= CUADRILLA_XF) && (vc_visible > CUADRILLA_YI) && (vc_visible <= CUADRILLA_YF));
 ///////////////////////////////////////////////////////////
         always @(posedge clk_vga )
         begin
@@ -138,28 +141,39 @@ module lab_9(
                         if(DENTRO_DE_LA_CUADRILLA)
                         begin
                             if (SW[0])
-                                VGA_COLOR <= image_cur_pix;
+                                VGA_COLOR <= {image_cur_pix_12};
                             else
                                 VGA_COLOR <= COLOR_YELLOW;
                         end else
                              VGA_COLOR  <= COLOR_GREY;
                 else
                        VGA_COLOR  <= COLOR_BLACK;// Seguridad
-               reset_addrb <= (reset_addrb == 19'd307199) ? 1'b1 : 1'b0;
         end
         
-        always_comb
-        begin
-                if (CERCA_DE_LA_CUADRILLA)
-                begin
-                        addrb_count_en = 1'b1;
-                end else begin
-                        addrb_count_en = 1'b0;
-                end
-        end        
+        assign addrb = (vc_visible - 11'd1)*512 + (hc_visible - 11'd1);
 
         always @(posedge clk100mhz_clkwiz)
-            reset_addra = (addra == 19'd307199) ? 1'b1 : 1'b0;
+            reset_addra = (addra == 18'd200701) ? 1'b1 : 1'b0;
+
+
+
+
+
+filtro1 color_Scr(
+    .color_in(image_cur_pix),
+    .SW(SW[15:10]),
+    .color_out(image_cur_pix_1)
+);
+
+
+filtrogris filtgr(
+    .color_in(image_cur_pix_1),
+    .SW(SW[2]),
+    .color_out(image_cur_pix_2)
+);
+
+        assign image_cur_pix_12 = {image_cur_pix_2[23:20], image_cur_pix_2[15:12], image_cur_pix_2[7:4]};
+
 
         assign {VGA_R, VGA_G, VGA_B} = VGA_COLOR;  
 endmodule

@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Wed Aug 22 01:21:54 2018
-# Process ID: 12226
-# Current directory: /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1
+# Start of session at: Fri Aug 24 18:54:09 2018
+# Process ID: 22012
+# Current directory: /home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1
 # Command line: vivado -log lab_9.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab_9.tcl
-# Log file: /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/lab_9.vds
-# Journal file: /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/vivado.jou
+# Log file: /home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/lab_9.vds
+# Journal file: /home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source lab_9.tcl -notrace

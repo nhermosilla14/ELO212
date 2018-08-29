@@ -7,20 +7,20 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/home/nicolas/.local/opt/Xilinx/SDK/2017.4/bin:/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/lin64:/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/bin
+  PATH=/home/benjamin/.opt/SDK/2017.4/bin:/home/benjamin/.opt/Vivado/2017.4/ids_lite/ISE/bin/lin64:/home/benjamin/.opt/Vivado/2017.4/bin
 else
-  PATH=/home/nicolas/.local/opt/Xilinx/SDK/2017.4/bin:/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/lin64:/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/bin:$PATH
+  PATH=/home/benjamin/.opt/SDK/2017.4/bin:/home/benjamin/.opt/Vivado/2017.4/ids_lite/ISE/bin/lin64:/home/benjamin/.opt/Vivado/2017.4/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=/home/benjamin/.opt/Vivado/2017.4/ids_lite/ISE/lib/lin64
 else
-  LD_LIBRARY_PATH=/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=/home/benjamin/.opt/Vivado/2017.4/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1'
+HD_PWD='/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

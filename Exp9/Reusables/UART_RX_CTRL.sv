@@ -3,7 +3,7 @@ module UART_RX_CTRL(
 	input  logic           reset,
 	input  logic           rx_ready,
         input  logic  [7:0]    rx_data,
-        output logic  [11:0]   video_data,
+        output logic  [23:0]   video_data,
         output logic  [2:0]    stateID,
         output logic           rx_ready_12
     );
@@ -11,7 +11,7 @@ module UART_RX_CTRL(
          logic [7:0]  fdce_input;
          logic ret_br, ret_bg, ret_bb;
          assign fdce_input = rx_data;
-         assign video_data = {data_br[7:4],data_bg[7:4],data_bb[7:4]};
+         assign video_data = {data_br,data_bg,data_bb};
      
         
          enum logic [2:0] {WAIT_BR, STORE_BR, WAIT_BG, STORE_BG, WAIT_BB, STORE_BB, SEND_RX_READY } state, next_state;

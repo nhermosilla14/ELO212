@@ -1,2 +1,2 @@
 # ELO212
-Repositorio para el ramo de sistemas digitales
+Repositorio para el ramo de laboratorio de sistemas digitales
