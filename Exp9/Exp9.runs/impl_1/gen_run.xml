@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1535147646">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1535605576">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="lab_9.drc"/>
   <File Type="BG-BGN" Name="lab_9.bgn"/>
@@ -26,43 +26,43 @@
   <File Type="ROUTE-STATUS-PB" Name="lab_9_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="lab_9_route_status.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="lab_9_power_routed.rpx"/>
-  <File Type="INIT-TIMING" Name="lab_9_timing_summary_init.rpt"/>
-  <File Type="OPT-DRC" Name="lab_9_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="lab_9_opt.dcp"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="lab_9_methodology_drc_opted.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="lab_9_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="lab_9_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="lab_9_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="lab_9_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="lab_9_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="lab_9_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="lab_9_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="lab_9_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="lab_9_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="lab_9_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="lab_9_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="lab_9_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="lab_9_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="lab_9_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="lab_9_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="lab_9_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="lab_9_timing_summary_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="lab_9_incremental_reuse_pre_placed.rpt"/>
-  <File Type="OPT-HWDEF" Name="lab_9.hwdef"/>
-  <File Type="OPT-TIMING" Name="lab_9_timing_summary_opted.rpt"/>
-  <File Type="REPORTS-TCL" Name="lab_9_reports.tcl"/>
-  <File Type="PWROPT-DCP" Name="lab_9_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="lab_9_drc_pwropted.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="lab_9_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="lab_9_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="lab_9_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="lab_9_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="lab_9_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="lab_9_io_placed.rpt"/>
   <File Type="RDI-RDI" Name="lab_9.vdi"/>
   <File Type="PWROPT-TIMING" Name="lab_9_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-IO" Name="lab_9_io_placed.rpt"/>
-  <File Type="PA-TCL" Name="lab_9.tcl"/>
+  <File Type="PWROPT-DRC" Name="lab_9_drc_pwropted.rpt"/>
+  <File Type="OPT-TIMING" Name="lab_9_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="lab_9.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="lab_9_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="lab_9_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="lab_9_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="lab_9_timing_summary_init.rpt"/>
+  <File Type="PWROPT-DCP" Name="lab_9_pwropt.dcp"/>
+  <File Type="REPORTS-TCL" Name="lab_9_reports.tcl"/>
   <File Type="PLACE-DCP" Name="lab_9_placed.dcp"/>
-  <File Type="PLACE-CLK" Name="lab_9_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="lab_9_timing_summary_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="lab_9_utilization_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="lab_9_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="lab_9_utilization_placed.pb"/>
-  <File Type="PHYSOPT-TIMING" Name="lab_9_timing_summary_physopted.rpt"/>
-  <File Type="PLACE-CTRL" Name="lab_9_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="lab_9_incremental_reuse_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="lab_9_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="lab_9_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="lab_9_drc_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="lab_9_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="lab_9_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="lab_9_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="lab_9_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="lab_9_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="lab_9_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="lab_9_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="lab_9_drc_routed.rpx"/>
-  <File Type="ROUTE-PWR" Name="lab_9_power_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="lab_9_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-PWR-SUM" Name="lab_9_power_summary_routed.pb"/>
+  <File Type="PA-TCL" Name="lab_9.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/Reusables/clk_divider.sv">
@@ -177,6 +177,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="lab_9"/>
@@ -209,5 +216,4 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
 </GenRun>

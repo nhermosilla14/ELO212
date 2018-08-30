@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
 -- Date        : Tue Aug 21 16:16:01 2018
 -- Host        : nicolas-xeon running 64-bit unknown
--- Command     : write_vhdl -force -mode synth_stub
---               /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top clk_wiz_0 -prefix
+--               clk_wiz_0_ clk_wiz_0_stub.vhdl
 -- Design      : clk_wiz_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-1

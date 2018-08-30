@@ -6,5 +6,10 @@
 		<Parent Id="clk_wiz_0_synth_1"/>
 		<Parent Id="blk_mem_gen_0_synth_1"/>
 	</Run>
+	<Run Id="impl_1" LaunchDir="/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="clk_wiz_0_synth_1"/>
+		<Parent Id="blk_mem_gen_0_synth_1"/>
+	</Run>
 </Runs>
 

@@ -722,3 +722,16 @@ INFO: [Common 17-1381] The checkpoint '/home/nicolas/Documentos/ELO/Digitales/LA
 INFO: [runtcl-4] Executing : report_utilization -file blk_mem_gen_0_utilization_synth.rpt -pb blk_mem_gen_0_utilization_synth.pb
 report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1696.941 ; gain = 0.000 ; free physical = 178 ; free virtual = 8834
 INFO: [Common 17-206] Exiting Vivado at Fri Aug 24 15:53:17 2018...
+
+*** Running vivado
+    with args -log blk_mem_gen_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source blk_mem_gen_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = 995018084e06fd23.
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 28 22:46:49 2018...

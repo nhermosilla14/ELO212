@@ -7,20 +7,20 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/home/benjamin/.opt/SDK/2017.4/bin:/home/benjamin/.opt/Vivado/2017.4/ids_lite/ISE/bin/lin64:/home/benjamin/.opt/Vivado/2017.4/bin
+  PATH=/home/nicolas/.local/opt/Xilinx/SDK/2017.4/bin:/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/lin64:/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/bin
 else
-  PATH=/home/benjamin/.opt/SDK/2017.4/bin:/home/benjamin/.opt/Vivado/2017.4/ids_lite/ISE/bin/lin64:/home/benjamin/.opt/Vivado/2017.4/bin:$PATH
+  PATH=/home/nicolas/.local/opt/Xilinx/SDK/2017.4/bin:/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/lin64:/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/home/benjamin/.opt/Vivado/2017.4/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/lin64
 else
-  LD_LIBRARY_PATH=/home/benjamin/.opt/Vivado/2017.4/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=/home/nicolas/.local/opt/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/benjamin/remoto/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/impl_1'
+HD_PWD='/home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -37,7 +37,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log lab_9.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source lab_9.tcl -notrace
 
 
