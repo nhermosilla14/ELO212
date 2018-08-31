@@ -15,6 +15,7 @@ module lab_9(
 
       
         logic clk100mhz_clkwiz;
+        logic reset_db;
         logic clk_vga;    
         logic [11:0] VGA_COLOR;  
         logic [10:0] vc_visible,hc_visible;
@@ -39,13 +40,26 @@ module lab_9(
                 .clk_in1(CLK100MHZ),
                 .reset(1'b0));
 /////////////////////////////////////////////////
+//Debouncers
+        pb_debouncer resetn_db(
+            .clk(clk100mhz_clkwiz),
+            .rst(0),
+            .PB(~CPU_RESETN),
+            .PB_state(),
+            .PB_negedge(),
+            .PB_posedge(reset_db)
+        );
+
+
+
+////////////////////////////////////////////////
 //Lógica para recibir la imagen. Consiste en un
 //módulo uart_tx_ctrl que reporta cuando llegan
 //los 12 bits de un pixel, y le avisa así a la
 //ram habilitando la entrada wea (write enable a).
 //
 
-        uart_basic uart_(
+        uart_basic #(.BAUD_RATE(230400)) uart_(
                 .clk(clk100mhz_clkwiz),
                 .reset(1'b0),
                 .rx(rx_line),
@@ -93,12 +107,6 @@ module lab_9(
                 .P(addra)
         );
 
-//        counter_nbit #(18) addrb_counter(
-//                .clk(clk_vga),
-//                .reset(reset_addrb),
-//                .enable(addrb_count_en),
-//                .P()
-//        );
 /////////////////////////////////////////////////////
 // Driver de la pantalla
 // Aquí se mandan las señales de color a la pantalla
@@ -145,10 +153,10 @@ module lab_9(
                        VGA_COLOR  <= COLOR_BLACK;// Seguridad
         end
         
-        assign addrb = ({7'b0, vc_visible} - 18'd1 - {7'b0, CUADRILLA_YI})*512 + ({7'b0,hc_visible} - 18'd1 - {7'b0, CUADRILLA_XI});
+        assign addrb = ({7'b0, vc_visible} - 18'd1 - {7'b0, CUADRILLA_YI})*512 + ({7'b0,hc_visible} + 18'd2 - {7'b0, CUADRILLA_XI});
 
         always @(posedge clk100mhz_clkwiz)
-            reset_addra = (addra == 18'd200704) ? 1'b1 : 1'b0;
+            reset_addra = ((addra == 18'd200704) | reset_db) ? 1'b1 : 1'b0;
 
 
 //////////////////////////////////////////

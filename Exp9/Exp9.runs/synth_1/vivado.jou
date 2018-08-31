@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Aug 30 02:03:22 2018
-# Process ID: 7247
+# Start of session at: Thu Aug 30 15:48:52 2018
+# Process ID: 25271
 # Current directory: /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1
 # Command line: vivado -log lab_9.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab_9.tcl
 # Log file: /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.runs/synth_1/lab_9.vds

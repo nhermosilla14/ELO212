@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-| Date             : Thu Aug 30 02:11:13 2018
+| Date             : Thu Aug 30 15:55:55 2018
 | Host             : nicolas-xeon running 64-bit unknown
 | Command          : report_power -file lab_9_power_routed.rpt -pb lab_9_power_summary_routed.pb -rpx lab_9_power_routed.rpx
 | Design           : lab_9
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.268        |
+| Total On-Chip Power (W)  | 0.263        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.164        |
+| Dynamic (W)              | 0.159        |
 | Device Static (W)        | 0.104        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 83.8         |
@@ -52,19 +52,19 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.009 |       10 |       --- |             --- |
-| Slice Logic    |     0.002 |     1442 |       --- |             --- |
-|   LUT as Logic |     0.002 |      702 |     63400 |            1.11 |
-|   CARRY4       |    <0.001 |       24 |     15850 |            0.15 |
-|   Register     |    <0.001 |      136 |    126800 |            0.11 |
+| Clocks         |     0.010 |       10 |       --- |             --- |
+| Slice Logic    |    <0.001 |     1494 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      734 |     63400 |            1.16 |
+|   CARRY4       |    <0.001 |       28 |     15850 |            0.18 |
+|   Register     |    <0.001 |      155 |    126800 |            0.12 |
 |   F7/F8 Muxes  |    <0.001 |      162 |     63400 |            0.26 |
-|   Others       |     0.000 |      379 |       --- |             --- |
-| Signals        |     0.011 |     1605 |       --- |             --- |
+|   Others       |     0.000 |      381 |       --- |             --- |
+| Signals        |     0.006 |     1657 |       --- |             --- |
 | Block RAM      |     0.017 |      135 |       135 |          100.00 |
 | MMCM           |     0.104 |        1 |         6 |           16.67 |
-| I/O            |     0.021 |       41 |       210 |           19.52 |
+| I/O            |     0.020 |       42 |       210 |           20.00 |
 | Static Power   |     0.104 |          |           |                 |
-| Total          |     0.268 |          |           |                 |
+| Total          |     0.263 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.057 |       0.038 |      0.019 |
+| Vccint    |       1.000 |     0.052 |       0.033 |      0.019 |
 | Vccaux    |       1.800 |     0.077 |       0.058 |      0.018 |
 | Vcco33    |       3.300 |     0.010 |       0.006 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -150,15 +150,15 @@ Table of Contents
 +----------------------------------------------+-----------+
 | Name                                         | Power (W) |
 +----------------------------------------------+-----------+
-| lab_9                                        |     0.164 |
+| lab_9                                        |     0.159 |
 |   addra_counter                              |     0.002 |
-|   blkmem                                     |     0.026 |
-|     U0                                       |     0.026 |
-|       inst_blk_mem_gen                       |     0.026 |
-|         gnbram.gnativebmg.native_blk_mem_gen |     0.026 |
-|           valid.cstr                         |     0.026 |
+|   blkmem                                     |     0.024 |
+|     U0                                       |     0.024 |
+|       inst_blk_mem_gen                       |     0.024 |
+|         gnbram.gnativebmg.native_blk_mem_gen |     0.024 |
+|           valid.cstr                         |     0.024 |
 |             bindec_b.bindec_inst_b           |    <0.001 |
-|             has_mux_b.B                      |     0.002 |
+|             has_mux_b.B                      |    <0.001 |
 |             ramloop[0].ram.r                 |    <0.001 |
 |               prim_noinit.ram                |    <0.001 |
 |             ramloop[100].ram.r               |    <0.001 |
@@ -398,7 +398,8 @@ Table of Contents
 |   filtgr                                     |    <0.001 |
 |   ins                                        |     0.105 |
 |     inst                                     |     0.105 |
-|   nolabel_line105                            |     0.008 |
+|   nolabel_line113                            |     0.004 |
+|   resetn_db                                  |    <0.001 |
 |   uart_                                      |     0.001 |
 |     baud8_tick_blk                           |    <0.001 |
 |     uart_rx_blk                              |    <0.001 |

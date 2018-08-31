@@ -39,7 +39,6 @@ read_verilog -library xil_defaultlib -sv {
   /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Referencias/driver_vga_1024x768.sv
   /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Referencias/lab_9.sv
   /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.srcs/sources_1/new/filtro1.sv
-  /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.srcs/sources_1/new/matrix_index.sv
   /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.srcs/sources_1/new/dith_simple.sv
   /home/nicolas/Documentos/ELO/Digitales/LAB/Verilog/Exp9/Exp9.srcs/sources_1/new/filtrogris.sv
 }
